@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One to ten rating design HTML</title>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="It is a simple html rating designs for giving rating from one to 10. for more contact learndphere@gmail.com">
+	<meta name="keywords" content="HTML, CSS, JavaScript, star rating, 1 to 10 star rating, one to 10 star rating, one to 10 star rating">
+	<meta name="author" content="Himanshu Sharma">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="col-md-12">
+		<h2>One to Ten Rating Design</h2>
+		<label class="my-priority-btn color1">
+			<input type="radio" name="priority" value="1" onchange="change_priority(this)">1
+		</label>
+		<label class="my-priority-btn color2">
+			<input type="radio" name="priority" value="2" onchange="change_priority(this)">2
+		</label>
+		<label class="my-priority-btn color3">
+			<input type="radio" name="priority" value="3" onchange="change_priority(this)">3
+		</label>
+		<label class="my-priority-btn color4">
+			<input type="radio" name="priority" value="4" onchange="change_priority(this)">4
+		</label>
+		<label class="my-priority-btn color5">
+			<input type="radio" name="priority" value="5" onchange="change_priority(this)">5
+		</label>
+		<label class="my-priority-btn color6">
+			<input type="radio" name="priority" value="6" onchange="change_priority(this)">6
+		</label>
+		<label class="my-priority-btn color7">
+			<input type="radio" name="priority" value="7" onchange="change_priority(this)">7
+		</label>
+		<label class="my-priority-btn color8">
+			<input type="radio" name="priority" value="8" onchange="change_priority(this)">8
+		</label>
+		<label class="my-priority-btn color9">
+			<input type="radio" name="priority" value="9" onchange="change_priority(this)">9
+		</label>
+		<label class="my-priority-btn color10">
+			<input type="radio" name="priority" value="10" onchange="change_priority(this)">10
+		</label>
+	</div>
+<style>
+	.my-priority-btn{
+		width:10rem;
+		background:#f32a23;
+		text-align:center;
+		color:#fff;
+		padding:1rem;
+		font-weight:900;
+	}
+	.my-priority-btn:hover{
+		padding:1.25rem;
+		border:2px solid #000;
+	}
+	.priority-active{
+		padding:1.25rem;
+		border:2px solid #000;
+	}
+	.my-priority-btn input{
+		display: none;;
+	}
+
+	.color1{background: #F32A23; }
+	.color2{background: #F64B21; }
+	.color3{background: #F96916; }
+	.color4{background: #FE820C; }
+	.color5{background: #FFB300; }
+	.color6{background: #FDCE01; }
+	.color7{background: #C1CC09; }
+	.color8{background: #7DCC0D; }
+	.color9{background: #64C820; }
+	.color10{background: #1BC732; }
+</style>
+<script type="text/javascript">
+	function change_priority(that){
+		$(".my-priority-btn").removeClass("priority-active");
+        $(that).parent().addClass("priority-active");
+    }
+</script>
+</body>
+</html>
